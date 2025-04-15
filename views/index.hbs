@@ -94,6 +94,31 @@
 
         </form>
 
-        <button id="search">Search</button>
+        {{!-- <button id="search" href="#resultsContainer">Search</button> --}}
+        <a href="#resultsContainer" id="search">Search</a>
+    </div>
+</div>
+
+
+<div id="resultsContainer">
+    <table id="resultsTable">
+        <thead>
+            <tr>
+                <th>Restaurant</th>
+                <th>Borough</th>
+                <th>Outdoor Seating</th>
+                <th>Dog Friendly</th>
+                {{!-- <th>Serves Alcohol</th> --}}
+            </tr>
+        </thead>
+        <tbody>
+            <!-- JSON data rows will go here -->
+        </tbody>
+    </table>
+
+    <div id="paginationControls">
+        <button id="prevPage">Previous</button>
+        <span id="pageIndicator">Page 1</span>
+        <button id="nextPage">Next</button>
     </div>
 </div>
