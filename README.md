@@ -6,8 +6,7 @@ _List the people a part of this group._
 
 ## **Link to Live Page**
 
-_Include a link to the live version of the project hosted on Glitch._
-
+Live site: https://knj-project2.glitch.me
 ## **Project Overview**
 
 _Briefly describe the concept of your project._
