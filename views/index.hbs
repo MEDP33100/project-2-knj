@@ -18,8 +18,20 @@
     <div id="form">
         <form>
             <div class="cuisine">
-                <label class="label" for="cusine">Choose Cuisine:</label>
-                <input type="text" id="textField" placeholder="what's the mood?">
+    
+                <label class="label" for="boroughSelect">What are you in the mood for?</label>
+                <select id="boroughSelect" class="textField" name="borough" required>
+                    <option value="" disabled selected>Select one</option>
+                    <option value="american">America</option>
+                    <option value="carribean">Carribean</option>
+                    <option value="chinese">Chinese</option>
+                    <option value="indian">Indian</option>
+                    <option value="italian">Italian</option>
+                    <option value="japanese">Japanese</option>
+                    <option value="mexican">Mexican</option>
+                    <option value="spanish">Spanish</option>
+                    <option value="thai">Thai</option>
+                </select>
             </div>
             <br>
 
@@ -30,19 +42,19 @@
                 </div>
 
                 <div>
-                    <input type="checkbox" value="brooklyn">
+                    <input type="checkbox" name="borough" value="brooklyn">
                     <label for="borough" class="input_labels">Bk </label>
 
-                    <input type="checkbox" value="brooklyn">
+                    <input type="checkbox" name="borough" value="brooklyn">
                     <label for="borough" class="input_labels">Bx </label>
 
-                    <input type="checkbox" value="brooklyn">
+                    <input type="checkbox" name="borough" value="brooklyn">
                     <label for="borough" class="input_labels">Mn </label>
 
-                    <input type="checkbox" value="brooklyn">
+                    <input type="checkbox" name="borough" value="brooklyn">
                     <label for="borough" class="input_labels">Qn </label>
 
-                    <input type="checkbox" value="brooklyn">
+                    <input type="checkbox" name="borough" value="brooklyn">
                     <label for="borough" class="input_labels">Si </label>
                 </div>
             </div>
@@ -50,12 +62,12 @@
 
             <div class="label_layout">
                 <div>
-                    <label class="label">Outdoor Seating: </label>
+                    <label class="label" for="outdoor">Outdoor Seating: </label>
                 </div>
                 <div>
-                    <input type="radio">
+                    <input type="radio" name="outdoor" value="yes" required>
                     <label class="input_labels">Yes</label>
-                    <input type="radio">
+                    <input type="radio" name="outdoor" value="no">
                     <label class="input_labels">No</label>
                 </div>
 
@@ -67,29 +79,15 @@
                     <label class="label">Dog Friendly: </label>
                 </div>
                 <div>
-                    <input type="radio">
+                    <input type="radio" name="pet" value="yes" required>
                     <label class="input_labels">Yes</label>
-                    <input type="radio">
+                    <input type="radio" name="pet" value="no">
                     <label class="input_labels">No</label>
                 </div>
 
 
             </div>
             <br>
-
-            <div class="label_layout">
-                <div>
-                    <label class="label">Serves Alcohol: </label>
-                </div>
-                <div>
-                    <input type="checkbox">
-                    <label class="input_labels">Yes</label>
-                    <input type="checkbox">
-                    <label class="input_labels">No</label>
-                    <input type="checkbox">
-                    <label class="input_labels">No Prefrence</label>
-                </div>
-            </div>
 
 
         </form>

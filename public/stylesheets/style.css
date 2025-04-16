@@ -74,13 +74,14 @@ body {
 }
 
 
-#textField {
+.textField {
   height: 2em;
   border-radius: 5px;
   border: 1px solid black;
   font-size: 1em;
   padding: 0.5em;
   width: 15em;
+  background-color: white;
 }
 
 .label_layout {
