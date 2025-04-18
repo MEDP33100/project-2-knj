@@ -1,16 +1,12 @@
 {
-  "name": "project-2-template",
-  "version": "0.0.0",
-  "private": true,
+  "name": "crave-nyc",
+  "version": "1.0.0",
+  "main": "server.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node server.js"
   },
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "express": "^4.21.2",
-    "hbs": "^4.2.0",
-    "http-errors": "~1.6.3",
-    "morgan": "~1.9.1"
+    "express": "^4.17.1",
+    "hbs": "^4.1.2"
   }
 }

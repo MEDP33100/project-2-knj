@@ -1,16 +1,67 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-    <title>{{title}}</title>
-    <link href='https://fonts.googleapis.com/css?family=Kirang Haerang' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Katibeh' rel='stylesheet'>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crave NYC 🥡</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
+  <div class="container">
+    <header>
+      <h1>Crave NYC 🥡</h1>
+      <p>Outdoor tables, local flavors - perfect for you, the crew, and Fido too</p>
+      <p2>Enhance your grub search by completing the form below. </p2>
+    </header>
 
-    {{{body}}}
+    <div class="controls">
+      <div class="filter-group">
+        <h3>Borough</h3>
+        <div class="checkbox-group">
+          <label><input type="checkbox" name="borough" value="Manhattan" checked> Manhattan</label>
+          <label><input type="checkbox" name="borough" value="Brooklyn" checked> Brooklyn</label>
+          <label><input type="checkbox" name="borough" value="Queens" checked> Queens</label>
+          <label><input type="checkbox" name="borough" value="Bronx" checked> Bronx</label>
+          <label><input type="checkbox" name="borough" value="Staten Island" checked> Staten Island</label>
+        </div>
+      </div>
+
+      <div class="filter-group">
+        <h3>Features</h3>
+        <label><input type="checkbox" name="outdoorSeating"> Outdoor Seating</label>
+        <label><input type="checkbox" name="alcohol"> Alcohol Served</label>
+      </div>
+
+      <div class="filter-group">
+        <h3>Sort By</h3>
+        <select id="sortBy">
+          <option value="name">Name (A-Z)</option>
+          <option value="-name">Name (Z-A)</option>
+          <option value="borough">Borough</option>
+        </select>
+      </div>
+
+      <button id="applyFilters">Apply Filters</button>
+      <button id="resetFilters">Reset</button>
+    </div>
+
+    <div class="stats">
+      <p>Showing <span id="restaurantCount">0</span> restaurants</p>
+    </div>
+
+    <div class="restaurant-grid" id="restaurantGrid">
+      <!-- Restaurant cards will be inserted here -->
+    </div>
+
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+      <p>Loading restaurants...</p>
+    </div>
+
+    <button id="loadMore" class="load-more">Load More Restaurants</button>
+  </div>
+
+  <script src="/javascript/script.js"></script>
 </body>
-
 </html>
