@@ -40,11 +40,10 @@ document.addEventListener('DOMContentLoaded', function() {
         const data = await response.json();
         
         allRestaurants = data.map(restaurant => ({
-        id: restaurant.camis || restaurant.id || Math.random().toString(36).substr(2, 9),
-        name: restaurant.dba || restaurant.restaurant_name || 'Unnamed Restaurant',
-        borough: (restaurant.boro || restaurant.borough || 'Unknown Borough').trim(),
+        name: restaurant.restaurant_name || 'Unnamed Restaurant',
+        borough: (restaurant.borough || 'Unknown Borough').trim(),
 
-        address: `${restaurant.building || ''} ${restaurant.street || ''}, ${restaurant.zipcode || ''}`.trim(),
+        address: `${restaurant.street || ''}, ${restaurant.zip || ''}`.trim(),
         outdoorSeating: (restaurant.approved_for_sidewalk_seating === 'yes' || 
                     restaurant.approved_for_roadway_seating === 'yes'),
         alcohol: (restaurant.qualify_alcohol === 'yes')
