@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
         name: restaurant.restaurant_name || 'Unnamed Restaurant',
         borough: (restaurant.borough || 'Unknown Borough').trim(),
 
-        address: `${restaurant.street || ''}, ${restaurant.zip || ''}`.trim(),
+        address: `${restaurant.business_address|| ''}`.trim(),
         outdoorSeating: (restaurant.approved_for_sidewalk_seating === 'yes' || 
                     restaurant.approved_for_roadway_seating === 'yes'),
         alcohol: (restaurant.qualify_alcohol === 'yes')
