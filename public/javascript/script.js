@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let allRestaurants = [];
     let displayedRestaurants = [];
     let currentOffset = 0;
-    const limit = 30;
+    const limit = 15;
     let activeFilters = {
       boroughs: ['Manhattan', 'Brooklyn', 'Queens', 'Bronx', 'Staten Island'],
       outdoorSeating: false,

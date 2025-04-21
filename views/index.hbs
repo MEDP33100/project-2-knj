@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,25 +7,15 @@
   <link rel="stylesheet" href="/stylesheets/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-
-  {{!-- this container --}}
   <div class="container">
-    <div class="header">
-       <h1>Crave NYC 🥡</h1>
+    <header>
+      <h1>Crave NYC 🥡</h1>
       <p>Outdoor tables, local flavors - perfect for you, the crew, and Fido too</p>
-      <br>
-      <a href="#controls">Let's Eat!</a>
-    </div>
-     
- 
+      <p2>Enhance your grub search by completing the form below. </p2>
+    </header>
 
-    {{!-- this container --}}
-    <p2>Enhance your grub search by completing the form below. </p2>
-    <div class="control-container">
-      <div id="controls">
-    
+    <div class="controls">
       <div class="filter-group">
         <h3>Borough</h3>
         <div class="checkbox-group">
@@ -55,31 +44,24 @@
 
       <button id="applyFilters">Apply Filters</button>
       <button id="resetFilters">Reset</button>
-      
     </div>
+
+    <div class="stats">
+      <p>Showing <span id="restaurantCount">0</span> restaurants</p>
     </div>
-    
 
-    <div class="stats-container">
-      <div class="stats">
-        <p>Showing <span id="restaurantCount">0</span> restaurants</p>
-      </div>
-
-      <div class="restaurant-grid" id="restaurantGrid">
-        <!-- Restaurant cards will be inserted here -->
-      </div>
-
-      <div class="loading" id="loading">
-        <div class="spinner"></div>
-        <p>Loading restaurants...</p>
-      </div>
-
-      <button id="loadMore" class="load-more">Load More Restaurants</button>
+    <div class="restaurant-grid" id="restaurantGrid">
+      <!-- Restaurant cards will be inserted here -->
     </div>
+
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+      <p>Loading restaurants...</p>
+    </div>
+
+    <button id="loadMore" class="load-more">Load More Restaurants</button>
   </div>
-
 
   <script src="/javascript/script.js"></script>
 </body>
-
 </html>
