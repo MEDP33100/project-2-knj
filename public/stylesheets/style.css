@@ -24,14 +24,18 @@ header {
 
 header h1 {
   font-family: 'Kirang Haerang';
-  font-size: 10vw;
-  margin: 0.3em 0 0.2em 0;
+  font-size: 15vw;
   color: #b60202;
 }
 
 header p {
-  color: #7f8c8d;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
+  background: linear-gradient(to bottom, #000000 0%, #4A4A4A 51%, #BABABA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  background-clip: text;
+  color: transparent;
 }
 
 p2{
@@ -133,6 +137,7 @@ button:hover {
 
 .restaurant-card:hover {
   transform: translateY(-5px);
+  border: solid 2px;
 }
 
 .restaurant-info {
@@ -152,7 +157,6 @@ button:hover {
 .feature-badge {
   display: inline-block;
   padding: 3px 8px;
-  background-color: #c90202;
   color: white;
   border-radius: 4px;
   font-size: 0.8rem;
@@ -160,6 +164,14 @@ button:hover {
   margin-top: 5px;
 }
 
+.feature-badge[data-type="outdoor"] {
+  background-color: rgb(184, 181, 181);
+  color: black;
+}
+
+.feature-badge[data-type="alcohol"] {
+  background-color: #c90202;
+}
 .loading {
   display: flex;
   flex-direction: column;
@@ -189,11 +201,11 @@ button:hover {
   width: 100%;
   padding: 15px;
   margin-top: 20px;
-  background-color: #000000;
+  background-color: #3c3b3b;
 }
 
 .load-more:hover {
-  background-color: #474747;
+  background-color: #000;
 }
 
 @media (max-width: 768px) {

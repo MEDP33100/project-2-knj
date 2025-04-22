@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let allRestaurants = [];
     let displayedRestaurants = [];
     let currentOffset = 0;
-    const limit = 30;
+    const limit = 10;
     let activeFilters = {
       boroughs: ['Manhattan', 'Brooklyn', 'Queens', 'Bronx', 'Staten Island'],
       outdoorSeating: false,
@@ -143,6 +143,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (restaurant.outdoorSeating) {
         const outdoorBadge = document.createElement('span');
         outdoorBadge.className = 'feature-badge';
+        outdoorBadge.dataset.type = 'outdoor';
         outdoorBadge.textContent = 'Outdoor Seating';
         featuresDiv.appendChild(outdoorBadge);
       }
@@ -150,6 +151,7 @@ document.addEventListener('DOMContentLoaded', function() {
       if (restaurant.alcohol) {
         const alcoholBadge = document.createElement('span');
         alcoholBadge.className = 'feature-badge';
+        alcoholBadge.dataset.type = 'alcohol';
         alcoholBadge.textContent = 'Alcohol Served';
         featuresDiv.appendChild(alcoholBadge);
       }
@@ -174,7 +176,7 @@ document.addEventListener('DOMContentLoaded', function() {
   
     function resetFilters() {
       document.querySelectorAll('input[name="borough"]').forEach(checkbox => {
-        checkbox.checked = true;
+        checkbox.checked = false;
       });
       
       document.querySelector('input[name="outdoorSeating"]').checked = false;
@@ -182,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function() {
       document.getElementById('sortBy').value = 'name';
       
       activeFilters = {
-        boroughs: ['Manhattan', 'Brooklyn', 'Queens', 'Bronx', 'Staten Island'],
+        boroughs: [],
         outdoorSeating: false,
         alcohol: false,
         sortBy: 'name'
