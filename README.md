@@ -7,7 +7,7 @@
 
 ## Live Page
 [Live page](https://knj-project2.glitch.me/)
-[Slideshow](https://www.figma.com/design/Y9FHK6Q0S5I6sUBnjWi1uQ/Crave-NYC-slide-deck?node-id=0-1&t=jk2GgJoJ3rqc4fz8-1)
+[Slideshow](https://www.figma.com/slides/S8HfacYP8bXLIDh7QZoPwH/Crave-NYC-slideshow?node-id=0-150&t=XminptdB7Nx0ZFTu-1)
 
 
 ## **Project Overview**
